@@ -1,5 +1,5 @@
 const firebase = require('firebase')
-const auth = require('./firebaseConfig.js')
+const auth = require('../config//firebaseConfig.js')
 
 
 let idRestaurant = 1

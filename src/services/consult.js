@@ -1,5 +1,5 @@
 var firebase = require('firebase')
-var configFirebase = require('./firebaseConfig')
+var configFirebase = require('../config/firebaseConfig')
 
 
 const consultUser = () => firebase.database().ref(`/usuarios/`).once('value')

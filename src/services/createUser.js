@@ -1,5 +1,5 @@
 var firebase = require('firebase')
-const firebaseConfig = require('./firebaseConfig')
+const firebaseConfig = require('../config/firebaseConfig')
 
 const user = 'evandrovcjunior@gmail.com'
 const senha = 'senha123'

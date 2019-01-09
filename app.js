@@ -1,0 +1,1 @@
+const init = require('./src/routes/controllers')

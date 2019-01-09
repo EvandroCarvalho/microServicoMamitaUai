@@ -5,12 +5,12 @@ const {
     consultUser,
     consultAddress,
     consultItem,
-    consultMenu } = require('./consult')
+    consultMenu } = require('../services/consult')
 const { 
     saveDataRestaurant,
     saveDataAddress,
     saveDataItem,
-    saveDataMenu } = require('./saveData')
+    saveDataMenu } = require('../services/saveData')
 
 const port = process.env.PORT || 8080
 const app = express()
