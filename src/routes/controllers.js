@@ -25,7 +25,6 @@ app.get('/users', async(request, response) => {
 app.get('/restaurants',async(request, response, next)  => {
     const result = await consultRestautant()
     response.json(result)
-    next()
 })
 
 
