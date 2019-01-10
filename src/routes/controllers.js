@@ -22,14 +22,14 @@ app.get('/users', async(request, response) => {
     response.json(result)
 })
 
-app.get('/restaurant',async(request, response, next)  => {
+app.get('/restaurants',async(request, response, next)  => {
     const result = await consultRestautant()
     response.json(result)
     next()
 })
 
 
-app.post('/restaurant', async(request, response) => {
+app.post('/restaurants', async(request, response) => {
     const result = await saveDataRestaurant(request.body)
     response.json(result)
 
@@ -48,27 +48,27 @@ app.post('/address', async(request, response) => {
 
 })
 
-app.get('/item',async(request, response, next)  => {
+app.get('/itens',async(request, response, next)  => {
     const result = await consultItem()
     response.json(result)
     next()
 })
 
 
-app.post('/item', async(request, response) => {
+app.post('/itens', async(request, response) => {
     const result = await saveDataItem(request.body)
     response.json(result)
 
 })
 
-app.get('/menu',async(request, response, next)  => {
+app.get('/menus',async(request, response, next)  => {
     const result = await consultMenu()
     response.json(result)
     next()
 })
 
 
-app.post('/menu', async(request, response) => {
+app.post('/menus', async(request, response) => {
     const result = await saveDataMenu(request.body)
     response.json(result)
 })
