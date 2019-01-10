@@ -37,7 +37,6 @@ app.post('/restaurants', async(request, response) => {
 app.get('/address',async(request, response, next)  => {
     const result = await consultAddress()
     response.json(result)
-    next()
 })
 
 
@@ -50,7 +49,6 @@ app.post('/address', async(request, response) => {
 app.get('/itens',async(request, response, next)  => {
     const result = await consultItem()
     response.json(result)
-    next()
 })
 
 
