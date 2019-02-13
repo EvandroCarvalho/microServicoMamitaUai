@@ -1,11 +1,11 @@
 var firebase = require('firebase')
 
 var config = {
-    apiKey: "AIzaSyBKsh7lXI75vc-hhEusWsXdXGLDyF6R_8U",
+    apiKey: process.env.APIKEY,
     authDomain: "marmitaoaui.firebaseapp.com",
     databaseURL: "https://marmitaoaui.firebaseio.com",
     projectId: "marmitaoaui",
     storageBucket: "",
-    messagingSenderId: "762011775968"
+    messagingSenderId: process.env.MESSAGINGSENDERID
   };
 firebase.initializeApp(config);
